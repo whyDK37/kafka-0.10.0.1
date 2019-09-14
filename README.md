@@ -4,7 +4,7 @@ See our [web site](http://kafka.apache.org) for details on the project.
 
 You need to have [Gradle](http://www.gradle.org/installation) and [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed.
 
-Kafka requires Gradle 2.0 or higher.
+Kafka requires Gradle 2.0 or higher, Scala 2.10.6.
 
 Java 7 should be used for building in order to support both Java 7 and Java 8 at runtime.
 
@@ -89,6 +89,9 @@ This is for `core`, `examples` and `clients`
 
     ./gradlew eclipse
     ./gradlew idea
+
+1. copy log4j.properties to kafka-0.10.0.1\core\src\main\scala\log4j.properties
+2. run Kafka.scala and set set program args "config/server.properties"
 
 ### Building the jar for all scala versions and for all projects ###
     ./gradlew jarAll
