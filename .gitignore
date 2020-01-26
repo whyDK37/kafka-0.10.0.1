@@ -85,4 +85,6 @@ build/
 algorithms/bin/**
 algorithms/out/**
 
-core/src/main/scala/log4j.properties
+# core/src/main/scala/log4j.properties
+
+out/
